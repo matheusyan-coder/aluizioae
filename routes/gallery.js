@@ -1,5 +1,4 @@
 var multer = require('multer')
-const gallery = require('../models/gallery')
 
 module.exports = (app) => {
     //importar as configs do database
@@ -44,11 +43,11 @@ module.exports = (app) => {
         })
 
     })
-}
+
 //vizualizar a imagem que será alterada
-app.get('/alterar_gallery',async(req,res)=>{
+/*app.get('/alterar_gallery',async(req,res)=>{
     var id = req.query.id
     var procurar = await gallery.findOne({_id:id})
     res.render('gallery_alterar.ejs',{dados:procurar})
-})
-
+})*/
+}
